@@ -1,0 +1,3 @@
+# mfe-host
+
+MFE HOST

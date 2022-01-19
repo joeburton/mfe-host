@@ -35,6 +35,12 @@ module.exports = {
         dashboard: 'mfe_dashboard@http://localhost:8081/remoteEntry.js',
         library: 'mfe_library@http://localhost:8082/remoteEntry.js',
       },
+      shared: [
+        {
+          react: { singleton: true, eager: true },
+          'react-dom': { singleton: true, eager: true },
+        },
+      ],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',

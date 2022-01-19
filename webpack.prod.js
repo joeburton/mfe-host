@@ -27,6 +27,12 @@ module.exports = {
           'mfe_dashboard@https://mfe-dashbaord.vercel.app/remoteEntry.js',
         library: 'mfe_library@https://mfe-library.vercel.app/remoteEntry.js',
       },
+      shared: [
+        {
+          react: { singleton: true, eager: true },
+          'react-dom': { singleton: true, eager: true },
+        },
+      ],
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
